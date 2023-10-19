@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-interactive-map',
+  selector: 'i-map',
   templateUrl: './interactive-map.component.html',
   styleUrls: ['./interactive-map.component.css']
 })
