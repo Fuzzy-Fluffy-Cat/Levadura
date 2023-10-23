@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./burger-container.component.css']
 })
 export class BurgerContainerComponent {
-
+  onClick() {
+    console.log("Burger Open!");
+  }
 }

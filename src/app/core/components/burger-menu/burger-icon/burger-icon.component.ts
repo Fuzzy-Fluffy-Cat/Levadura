@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./burger-icon.component.css']
 })
 export class BurgerIconComponent {
-
+  onClick() {
+    alert("Open Side Nav!")
+  }
 }

@@ -6,6 +6,9 @@ import { BurgerContainerComponent } from './components/burger-menu/burger-contai
 import { BurgerIconComponent } from './components/burger-menu/burger-icon/burger-icon.component';
 import { BurgerTextComponent } from './components/burger-menu/burger-text/burger-text.component';
 import { ViewSelectorComponent } from './components/view-selector/view-selector.component';
+import { FilterSectionComponent } from './components/filter-section/filter-section.component';
+import { EngagementViewsComponent } from './components/engagement-views/engagement-views.component';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,10 @@ import { ViewSelectorComponent } from './components/view-selector/view-selector.
     BurgerContainerComponent,
     BurgerIconComponent,
     BurgerTextComponent,
-    ViewSelectorComponent
+    ViewSelectorComponent,
+    FilterSectionComponent,
+    EngagementViewsComponent,
+    SideNavComponent
   ],
   imports: [
     CommonModule
@@ -21,7 +27,9 @@ import { ViewSelectorComponent } from './components/view-selector/view-selector.
   exports: [
     IMapComponent,
     BurgerContainerComponent,
-    ViewSelectorComponent
+    ViewSelectorComponent,
+    EngagementViewsComponent,
+    SideNavComponent
   ]
 })
 export class CoreModule { }

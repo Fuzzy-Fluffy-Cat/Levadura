@@ -16,7 +16,12 @@
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<!-- <burger-container></burger-container> -->
-<burger-ctr></burger-ctr>
-<view-selector></view-selector>
-<i-map></i-map>
+<!-- <burger-container></burger-container> let-toggle="on"-->
+<div class="side-nav-container">
+    <burger-ctr></burger-ctr>
+    <ng-container *ngIf="0">
+        <side-nav></side-nav>
+    </ng-container>
+</div>
+
+<engagement-views></engagement-views>

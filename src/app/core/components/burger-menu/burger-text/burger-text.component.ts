@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./burger-text.component.css']
 })
 export class BurgerTextComponent {
-
+  onClick() {
+    alert("Open Side Navigation")
+  }
 }
