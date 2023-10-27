@@ -5,4 +5,5 @@ body {
 
     /* Temporary */
     height: 300vh;
+    overflow-x: hidden;
 }

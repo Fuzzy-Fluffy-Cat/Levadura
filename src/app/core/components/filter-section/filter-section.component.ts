@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./filter-section.component.css']
 })
 export class FilterSectionComponent {
-
+  onClick() {
+    alert("Filter Out Some Stuff");
+  }
 }

@@ -1,11 +1,11 @@
 #i-map {
-    width: 100%;
-    height: 90vh;
-    margin: 0 auto;
+    width: 98.9vw;
+    height: 80%;
+    margin: 0;
     /* fill: #ccc;
     stroke: #333;
     stroke-width: 2; */
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid #cccccc;
     overflow: hidden;
     background-color: #dddddd;
 
@@ -15,18 +15,35 @@
 }
 
 #info-section {
-    width: 30%;
+    width: 30vw;
     height: 100%;
     background-color: white;
     border-right: 1px solid hsl(0, 0%, 41%);
-    border-bottom: 1px solid #696969;
+    border-bottom: 1px solid #cccccc;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-gutter: auto;
     flex-wrap: wrap;
+}
+
+#info-section::-webkit-scrollbar {
+    width: 6px;
+    height: 70%;
+    margin-right: 2px;
+}
+
+#info-section::-webkit-scrollbar-thumb {
+    background: #696969;
+    border-radius: 10px;
+}
+
+#info-section::-webkit-scrollbar-track {
+    background: #aaaaaa;
 }
 
 .info {
@@ -43,14 +60,10 @@
 }
 
 #map-section {
-    width: 70%;
+    width: 70vw;
     height: 100%;
     margin: auto;
     overflow: scroll;
-}
 
-#map {
-    transform: scale(1);
-    border: 1px dashed #cccccc;
+    border-left: 1px solid red;
 }
-
