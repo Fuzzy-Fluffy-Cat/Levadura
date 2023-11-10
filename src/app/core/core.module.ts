@@ -8,7 +8,8 @@ import { BurgerTextComponent } from './components/burger-menu/burger-text/burger
 import { ViewSelectorComponent } from './components/view-selector/view-selector.component';
 import { FilterSectionComponent } from './components/filter-section/filter-section.component';
 import { EngagementViewsComponent } from './components/engagement-views/engagement-views.component';
-import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { PieChartComponent } from './components/graph-views/pie-chart/pie-chart.component';
+import { BarGraphComponent } from './components/graph-views/bar-graph/bar-graph.component';
 
 @NgModule({
   declarations: [
@@ -19,17 +20,14 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
     ViewSelectorComponent,
     FilterSectionComponent,
     EngagementViewsComponent,
-    SideNavComponent
+    PieChartComponent,
+    BarGraphComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    IMapComponent,
-    BurgerContainerComponent,
-    ViewSelectorComponent,
-    EngagementViewsComponent,
-    SideNavComponent
+    EngagementViewsComponent
   ]
 })
 export class CoreModule { }

@@ -1,32 +1,14 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- Views section goes in here; Default view is the interactive map (no filters) -->
+<ng-container>
+    <ng-template [ngIf]="true">
+        <engagement-views></engagement-views>
+    </ng-template>
+</ng-container>
 
-<!-- <burger-container></burger-container> let-toggle="on"-->
-<div class="side-nav-container">
-    <burger-ctr></burger-ctr>
-    <ng-container *ngIf="0">
-        <side-nav></side-nav>
-    </ng-container>
-</div>
 
-<engagement-views></engagement-views>
-
-<ng-template *ngIf="true">
+<ng-template *ngIf="false">
     <div class="dashboard">
         <div class="db-header">
             <h1>Related Social Engagements</h1>

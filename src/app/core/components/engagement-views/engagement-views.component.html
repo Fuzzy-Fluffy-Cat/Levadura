@@ -1,7 +1,14 @@
 <div class="engagement-views">
     <view-selector></view-selector>
-    <ng-container>
-        <i-map></i-map>
-    </ng-container>
-    <filter-section></filter-section>
+    
+    <div class="view-container">
+        <ng-container *ngIf="0">
+            <i-map></i-map>
+        </ng-container>
+        <ng-container *ngIf="1">
+            <pie-chart></pie-chart>
+        </ng-container>
+    </div>
+
+    <filter-section></filter-section>    
 </div>

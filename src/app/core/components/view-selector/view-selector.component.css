@@ -1,6 +1,6 @@
 .view-selector {
     width: 99vw;
-    height: 8vh;
+    height: 10vh;
     z-index: 0;
     margin: none;
     padding: none;
@@ -10,10 +10,10 @@
     align-items: center;
     justify-content: flex-end;
 
-    border-bottom: 1px solid #cccccc;
+    /* border-bottom: 1px solid #cccccc; */
 
-    border-left: 1px solid red;
-    border-right: 1px solid red;
+    /* border-left: 1px solid red;
+    border-right: 1px solid red; */
 }
 
 .view-choice {
