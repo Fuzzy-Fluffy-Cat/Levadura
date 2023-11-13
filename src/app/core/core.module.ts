@@ -10,6 +10,8 @@ import { FilterSectionComponent } from './components/filter-section/filter-secti
 import { EngagementViewsComponent } from './components/engagement-views/engagement-views.component';
 import { PieChartComponent } from './components/graph-views/pie-chart/pie-chart.component';
 import { BarGraphComponent } from './components/graph-views/bar-graph/bar-graph.component';
+import { StackedBarGraphComponent } from './components/graph-views/stacked-bar-graph/stacked-bar-graph.component';
+import { RadarChartComponent } from './components/graph-views/radar-chart/radar-chart.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { BarGraphComponent } from './components/graph-views/bar-graph/bar-graph.
     FilterSectionComponent,
     EngagementViewsComponent,
     PieChartComponent,
-    BarGraphComponent
+    BarGraphComponent,
+    StackedBarGraphComponent,
+    RadarChartComponent
   ],
   imports: [
     CommonModule

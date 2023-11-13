@@ -6,12 +6,9 @@
                 <div class="filter-drop-down" id="filter-by">
                     <!-- Only one <p> element here. Value inside will be variable -->
                     <!-- {{filterType}} -->
-                    <p *ngIf="1">Marginalized Sector</p>
-                    <p *ngIf="0">Type of Activity</p>
-                    <p *ngIf="0">Region of the World</p>
+                    <p *ngIf="1">Region of the World</p>
                     <p *ngIf="0">Language Used</p>
                     <p *ngIf="0">Age Group</p>
-                    <p *ngIf="0">Group Type</p>
                     <p *ngIf="0">Member Size</p>
                 </div>
             </ng-template>
@@ -31,34 +28,8 @@
 
         </div>
         <div class="choice-container" id="filter-type">
-            <!-- Periphery -->
-            <ng-template [ngIf]="1">
-                <div (click)="onClick()">Children</div>
-                <div (click)="onClick()">Women</div>
-                <div (click)="onClick()">Indigenous People</div>
-                <div (click)="onClick()">Poor</div>
-                <div (click)="onClick()">Out of School</div>
-                <div (click)="onClick()">Orphans</div>
-                <div (click)="onClick()">PWD</div>
-                <div (click)="onClick()">LGBTQIA+</div>
-                <div (click)="onClick()">Mentally Challenged</div>
-                <div (click)="onClick()">Broken</div>
-                <div (click)="onClick()">Unemployed</div>
-                <div (click)="onClick()">Rehabilitees</div>
-                <div (click)="onClick()">Others</div>
-            </ng-template>
-
-            <!-- Activity Type -->
-            <ng-template [ngIf]="0">
-                <div (click)="onClick()">Curricular</div>
-                <div (click)="onClick()">Extra-curricular</div>
-                <div (click)="onClick()">Volunteering</div>
-                <div (click)="onClick()">Charity</div>
-                <div (click)="onClick()">Others</div>
-            </ng-template>
-
             <!-- Region -->
-            <ng-template [ngIf]="0">
+            <ng-template [ngIf]="1">
                 <div (click)="onClick()">Asia-Pacific</div>
                 <div (click)="onClick()">Europe</div>
                 <div (click)="onClick()">Latin America</div>
@@ -92,17 +63,6 @@
                 <div (click)="onClick()">Broken</div>
                 <div (click)="onClick()">Unemployed</div>
                 <div (click)="onClick()">Rehabilitees</div>
-            </ng-template>
-
-            <!-- Group Type -->
-            <ng-template [ngIf]="0">
-                <div (click)="onClick()">Volunteers</div>
-                <div (click)="onClick()">Students</div>
-                <div (click)="onClick()">NGO</div>
-                <div (click)="onClick()">Company</div>
-                <div (click)="onClick()">School Department</div>
-                <div (click)="onClick()">School Office</div>
-                <div (click)="onClick()">Union</div>
             </ng-template>
 
             <!-- Member Size -->
