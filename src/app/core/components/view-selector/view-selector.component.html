@@ -1,14 +1,20 @@
 <div class="view-selector">
-    <button class="view-choice" id="map-view">
-        <h4>Interactive Map</h4>
+    <button class="view-choice" (click)=“changeView(1)”>
+        <h4>World Regions</h4>
     </button>
-    <button class="view-choice" id="radar-view">
-        <h4>Radar Chart</h4>
+    <button class="view-choice" (click)=“changeView(2)”>
+        <h4>Marglinalized Sectors</h4>
     </button>
-    <button class="view-choice" id="collab-network-graph">
-        <h4>Collaboration Graph</h4>
+    <button class="view-choice" (click)=“changeView(3)”>
+        <h4>Curricular Elements</h4>
     </button>
-    <button class="view-choice" id="progress-view">
-        <h4>Growth Overview</h4>
+    <button class="view-choice" (click)=“changeView(4)”>
+        <h4>Member Types</h4>
+    </button>
+    <button class="view-choice" (click)=“changeView(5)”>
+        <h4>Engagement Types</h4>
+    </button>
+    <button class="view-choice" (click)="changeGraph()">
+        <h4>Change Graph</h4>
     </button>
 </div>

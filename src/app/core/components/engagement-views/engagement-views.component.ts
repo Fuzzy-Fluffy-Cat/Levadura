@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./engagement-views.component.css']
 })
 export class EngagementViewsComponent {
+    viewNum = 1;
+    pieGraph = true
+    
+    changeView(value: any) {
+        this.viewNum = value;
+        this.pieGraph = false;
+    }
 
+    changeGraph() {
+        this.pieGraph = !this.pieGraph()
+    }
 }
