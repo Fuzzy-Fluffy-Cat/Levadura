@@ -71,8 +71,8 @@ export class PieChartComponent {
       ]
     }
     else if  (this.view == 3) /* Member Types */ {
-      this.ls = ['Brothers / Aspirants', 'Researchers', 'Professionals', 'Teachers/Professors', 'Support Staff', 'School Leaders', 'Kindergarten', 'Grade School', 'High School', 'College', 'Post-Grad', 'Alumni', 'Parents', 'Volunteers']
-      this.dt = [680, 840, 411, 317, 895, 152, 630, 250, 420, 604, 763, 839, 418, 443];
+      this.ls = ['Brothers / Aspirants', 'Researchers', 'Teachers/Professors', 'Support Staff', 'Kindergarten', 'Grade School', 'High School', 'College', 'Post-Grad', 'Alumni', 'Parents', 'Volunteers']
+      this.dt = [680, 840, 411, 317, 895, 152, 630, 420, 604, 763, 839, 418];
       this.lbl = ['Number of Projects']
       this.colors = [
         '#ff0000',
@@ -93,11 +93,10 @@ export class PieChartComponent {
       ]
     }
     else if (this.view == 4) /* Engagement Types */ {
-      this.ls = ['Poverty Alleviation', 'Medical Mission', 'Alternative Learning', 'Skills Upgrade', 'Social Entrepreneurship', 'Home/Upgrade', 'Water', 'Electricity', 'School', 'Improvement', 'Equipment', 'Infrastructure', 'Communication', 'Wellness', 'Others']
-      this.dt = [703, 697, 746, 493, 812, 480, 738, 208, 204, 415, 232, 350, 797, 224, 293];
+      this.ls = ['Poverty Alleviation', 'Medical Mission', 'Alternative Learning', 'Skills Upgrade', 'Social Entrepreneurship', 'Home/Upgrade', 'Utilities', 'School', 'Equipment', 'Infrastructure', 'Others']
+      this.dt = [703, 697, 746, 493, 812, 480, 738, 208, 204, 415, 232];
       this.lbl = ['Number of Projects']
-      this.colors = ["#FF5733", "#34A853", "#6F2DBD", "#00BFFF", "#FFD700", "#4CAF50", "#FF4081", "#4285F4", "#FF6347", "#AB47BC", "#FFC107", "#03A9F4", "#E91E63", "#8BC34A", "#673AB7"
-    ]
+      this.colors = ["#FF5733", "#34A853", "#6F2DBD", "#00BFFF", "#FFD700", "#4CAF50", "#FF4081", "#4285F4", "#FF6347", "#AB47BC", "#FFC107"]
     }
 
     this.pieChart = new Chart("pieChart", {

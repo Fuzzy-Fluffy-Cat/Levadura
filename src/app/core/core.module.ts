@@ -9,6 +9,7 @@ import { BarGraphComponent } from './components/graph-views/bar-graph/bar-graph.
 import { StackedBarGraphComponent } from './components/graph-views/stacked-bar-graph/stacked-bar-graph.component';
 import { RadarChartComponent } from './components/graph-views/radar-chart/radar-chart.component';
 import { CounterComponent } from './components/counter/counter.component';
+import { NavHeaderComponent } from './components/nav-header/nav-header.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +20,15 @@ import { CounterComponent } from './components/counter/counter.component';
     BarGraphComponent,
     StackedBarGraphComponent,
     RadarChartComponent,
-    CounterComponent
+    CounterComponent,
+    NavHeaderComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    EngagementViewsComponent
+    EngagementViewsComponent,
+    NavHeaderComponent
   ]
 })
 export class CoreModule { }

@@ -10,7 +10,7 @@ export class EngagementViewsComponent {
   // @Output() changeViewEvent = new EventEmitter();
 
   viewSelectNum = 0;
-  graphSelectNum = true;
+  graphSelectNum = 0;
 
   ngOnInit() {
     console.log("!!!!!");
@@ -18,11 +18,15 @@ export class EngagementViewsComponent {
 
   changeView(value: any) {
     this.viewSelectNum = value;
-    this.graphSelectNum = true;
     // this.changeViewEvent.emit(value);
   }
 
   changeGraph() {
-    this.graphSelectNum = !this.graphSelectNum;
+    if (this.graphSelectNum != 3) {
+      this.graphSelectNum = this.graphSelectNum +  1;
+    }
+    else {
+      this.graphSelectNum = 0
+    }
   }
 }
