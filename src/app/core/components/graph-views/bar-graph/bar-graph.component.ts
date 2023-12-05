@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Chart, BarController } from 'chart.js/auto';
 
 @Component({
@@ -7,11 +7,17 @@ import { Chart, BarController } from 'chart.js/auto';
   styleUrls: ['./bar-graph.component.css']
 })
 export class BarGraphComponent {
+  @Input() view = 0;
   public barGraph: any;
 
   ngOnInit(): void {
     this.createChart()
+    console.log(this.view)
   }
+
+  // onClick() {
+  //   viewSelectNum = 2
+  // }
 
   createChart() {
     this.barGraph = new Chart("barGraph", {
@@ -97,7 +103,7 @@ export class BarGraphComponent {
           }
         ]},
       options: {
-        aspectRatio: 3
+        aspectRatio: 2
       }
     });
   }

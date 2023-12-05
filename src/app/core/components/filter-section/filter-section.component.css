@@ -43,8 +43,8 @@
 }
 
 .filter-drop-down-toggled {
-    width: min(80%, 60%);
-    height: min(40vh, 50vh);
+    width: 60%;
+    height: fit-content;
     background-color: #888888;
     border: 1px solid 888888;
     color: white;
@@ -57,12 +57,20 @@
 
     & div {
         user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
 
         &:hover {
             background-color: #cccccc;
             color: #444444;
         }
     }
+}
+
+.filter-group-selection {
+    height: 3vh;
 }
 
 .choice-container {

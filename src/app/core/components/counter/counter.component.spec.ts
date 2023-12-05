@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IMapComponent } from './i-map.component';
+import { CounterComponent } from './counter.component';
 
-describe('IMapComponent', () => {
-  let component: IMapComponent;
-  let fixture: ComponentFixture<IMapComponent>;
+describe('CounterComponent', () => {
+  let component: CounterComponent;
+  let fixture: ComponentFixture<CounterComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [IMapComponent]
+      declarations: [CounterComponent]
     });
-    fixture = TestBed.createComponent(IMapComponent);
+    fixture = TestBed.createComponent(CounterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
