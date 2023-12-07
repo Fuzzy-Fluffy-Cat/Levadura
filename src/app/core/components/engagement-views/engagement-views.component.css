@@ -3,13 +3,23 @@
     min-height: 90vh;
     
     border-top: 1px solid black;
+    overflow-x: hidden;
     /* border-bottom: 1px solid black; */
 }
 
 .view-container {
     width: 100%;
-    min-height: 70vh;
+    height: fit-content;
 
     border-top: 1px solid #777777;
     border-bottom: 1px solid #777777;
+}
+
+.eng-container {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }

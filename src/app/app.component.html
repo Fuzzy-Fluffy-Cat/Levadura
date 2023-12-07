@@ -1,14 +1,15 @@
 
-
+<nav-header></nav-header>
 <!-- Views section goes in here; Default view is the interactive map (no filters) -->
 <ng-container>
+    
     <ng-template [ngIf]="true">
         <engagement-views></engagement-views>
     </ng-template>
 </ng-container>
 
 
-<ng-template *ngIf="false">
+<ng-template [ngIf]="">
     <div class="dashboard">
         <div class="db-header">
             <h1>Related Social Engagements</h1>

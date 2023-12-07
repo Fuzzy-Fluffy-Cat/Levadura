@@ -1,0 +1,28 @@
+.count-container {
+    width: 25vw;
+    height: 100%;
+    border-left: 1px solid #777777;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    border-left: 1px solid #777777;
+
+}
+
+.counter-header {
+    width: 25vw;
+    height: 20vh;
+    border-bottom: 1px solid #777777;
+    padding-left: 1rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.data-count {
+    width: 25vw;
+    height: 45vh;
+    text-align: center;
+}
