@@ -1,0 +1,7 @@
+.stacked-bar-container {
+    width: 75vw;
+    height: 70vh;
+    border-right: 1px solid #777777;
+    display: flex;
+    justify-content: space-around;
+}

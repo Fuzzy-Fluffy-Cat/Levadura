@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IMapComponent } from './i-map.component';
+import { NavHeaderComponent } from './nav-header.component';
 
-describe('IMapComponent', () => {
-  let component: IMapComponent;
-  let fixture: ComponentFixture<IMapComponent>;
+describe('NavHeaderComponent', () => {
+  let component: NavHeaderComponent;
+  let fixture: ComponentFixture<NavHeaderComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [IMapComponent]
+      declarations: [NavHeaderComponent]
     });
-    fixture = TestBed.createComponent(IMapComponent);
+    fixture = TestBed.createComponent(NavHeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
